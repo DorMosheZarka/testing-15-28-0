@@ -1,0 +1,24 @@
+.root {
+  width: 20vw;
+  height: 40vh;
+  border-radius: 10px;
+  display: grid;
+  grid-template-rows: 3fr 2fr;
+  border: 1px solid #000000;
+}
+.cardImage {
+  background-image: url('https://static.wixstatic.com/media/d9657b20f1b9473f90815b9da211bb2a.jpg/v1/fit/w_924,h_520/d9657b20f1b9473f90815b9da211bb2a.jpg');
+  background-position: 50%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom: 1px solid black;
+}
+.cardText {
+  font-weight: 700;
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+
