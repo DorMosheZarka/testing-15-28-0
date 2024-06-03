@@ -9,7 +9,7 @@ export interface CardsProps {
 const cardsData = [
     {
         title: 'Codux',
-        date: '2024',
+        date: '2019-2024',
         description: 'Codux is a nice software',
         extraDescription: '1B users',
     },
