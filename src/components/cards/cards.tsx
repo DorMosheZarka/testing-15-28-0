@@ -25,7 +25,7 @@ export const Cards = ({ className }: CardsProps) => {
     return (
         <div className="ui link cards">
             {cardsData.map((cardsData) => (
-                <Card {...cardsData} />
+                <Card key={cardsData.title} {...cardsData} />
             ))}
         </div>
     );
