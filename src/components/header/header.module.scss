@@ -9,9 +9,9 @@
   justify-content: space-between;
 }
 .logo {
-  width: 100%;
-  height: 100%;
+  width: 10em;
   padding-left: 4em;
+  height: 6em;
 }
 .navLinks {
   flex-direction: row;
@@ -22,7 +22,7 @@
   width: 60%;
   list-style-type: none;
   justify-content: end;
-  column-gap: 1em;
+  column-gap: 4em;
   padding-right: 4em;
 }
 .link {

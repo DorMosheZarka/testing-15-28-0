@@ -23,7 +23,7 @@
   "styling": {
     "solution": "scss modules"
   },
-  "svgLoader": "both",
+  "svgLoader": "svgr",
   "addPanel": {
     "assets": ["@codux-boards/react-semantic"]
   }

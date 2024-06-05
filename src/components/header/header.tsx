@@ -1,6 +1,6 @@
 import classNames from 'classnames';
 import styles from './header.module.scss';
-import { ReactComponent as CoduxSvg } from '../../assets/codux.svg';
+import CoduxSvg from '../../assets/codux.svg?react';
 import { Button, Icon } from 'semantic-ui-react';
 
 export interface HeaderProps {
@@ -11,9 +11,7 @@ export const Header = ({ className }: HeaderProps) => {
     return (
         <div className={classNames(styles.root, className)}>
             <div className={styles.navBar}>
-                <div>
-                    <CoduxSvg className={styles.logo} />
-                </div>
+                <CoduxSvg className={styles.logo} />
                 <ul className={styles.navLinks}>
                     <li className={styles.link}>Home</li>
                     <li className={styles.link}>About</li>
