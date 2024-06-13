@@ -6,6 +6,9 @@ const cardData = {
     date: '2024',
     description: 'Codux is a nice software',
     extraDescription: '1B users',
+    onClick: () => {
+        alert('clicked');
+    },
 };
 
 export default createBoard({

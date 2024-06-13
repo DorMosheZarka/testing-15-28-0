@@ -1,5 +1,5 @@
 import classNames from 'classnames';
-import styles from './card.module.scss';
+import styles from '../card/card.module.scss';
 
 export interface CardProps {
     className?: string;
@@ -7,17 +7,9 @@ export interface CardProps {
     date: string;
     description: string;
     extraDescription: string;
-    onClick: () => void;
 }
 
-export const Card = ({
-    className,
-    title,
-    date,
-    description,
-    extraDescription,
-    onClick,
-}: CardProps) => {
+export const CardPropertyObject = (props: CardProps) => {
     return (
         <div className="ui card">
             <img
@@ -26,18 +18,16 @@ export const Card = ({
             />
             <div className="content">
                 <div className="image"></div>
-                <a className="header" onClick={onClick}>
-                    {title}
-                </a>
+                <a className="header">{props.title}</a>
                 <div className="meta">
-                    <span className="date">{date}</span>
+                    <span className="date">{props.date}</span>
                 </div>
-                <div className="description">{description}</div>
+                <div className="description">{props.description}</div>
             </div>
             <div className="extra content">
                 <a>
                     <i className="user icon"></i>
-                    {extraDescription}
+                    {props.extraDescription}
                 </a>
             </div>
         </div>
