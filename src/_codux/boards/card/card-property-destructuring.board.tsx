@@ -13,7 +13,7 @@ const card: CardProps = {
 const { title, year, description, date, version, onClick } = card;
 
 export default createBoard({
-    name: 'Card Destructuring - Board Property destructuring',
+    name: 'Card Destructuring - destructuring',
     Board: () => (
         <Card
             title={title}

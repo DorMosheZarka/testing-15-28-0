@@ -8,7 +8,7 @@ const titleByfunc = (newTitle: string) => newTitle;
 const handleClick: () => void = () => alert(newTitle);
 
 export default createBoard({
-    name: 'Card Destructuring - Board Imported data',
+    name: 'Card Destructuring - Imported data',
     Board: () => (
         <Card
             title={titleByfunc(newTitle)}

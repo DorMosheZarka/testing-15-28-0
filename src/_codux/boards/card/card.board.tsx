@@ -1,7 +1,7 @@
 import { createBoard } from '@wixc3/react-board';
 import { Card } from '../../../components/card/card';
 
-const cardData = {
+const card = {
     title: 'Codux',
     date: '2024',
     description: 'Codux is a nice software',
@@ -12,7 +12,7 @@ const cardData = {
 };
 
 export default createBoard({
-    name: 'Card Destructuring - Board Spread operator',
-    Board: () => <Card {...cardData} />,
+    name: 'Card Destructuring - Spread operator',
+    Board: () => <Card {...card} />,
     isSnippet: true,
 });
