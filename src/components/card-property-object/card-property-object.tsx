@@ -1,13 +1,16 @@
 import classNames from 'classnames';
 import styles from '../card/card.module.scss';
+import { Description } from '../../data/description/description';
+
+type Version = 'alpha' | 'beta'
 
 export interface CardProps {
     className?: string;
     title: string;
     year: number;
-    description: string;
+    description: Description;
     date: Date;
-    version: 'alpha' | 'beta';
+    version: Version;
     onClick: () => void;
 }
 
@@ -26,7 +29,7 @@ export const CardPropertyObject = (props: CardProps) => {
                 <div className="meta">
                     <span className="date">{props.year}</span>
                 </div>
-                <div className="description">{props.description}</div>
+                <div className="description">{props.description.getPerson()}</div>
             </div>
             <div className="extra content">
                 <a>

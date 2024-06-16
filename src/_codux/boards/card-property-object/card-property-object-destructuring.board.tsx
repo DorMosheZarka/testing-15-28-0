@@ -3,11 +3,12 @@ import {
     CardPropertyObject,
     type CardProps,
 } from '../../../components/card-property-object/card-property-object';
+import { Description } from '../../../data/description/description';
 
 const card: CardProps = {
     title: 'title',
     year: 2024,
-    description: 'Software',
+    description: new Description('Codux', 'Wix', 5),
     date: new Date(),
     version: 'beta',
     onClick: () => null,
