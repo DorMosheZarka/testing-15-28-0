@@ -1,5 +1,8 @@
 import { createBoard } from '@wixc3/react-board';
-import { Card, type CardProps } from '../../../components/card/card';
+import {
+    CardPropertyObject,
+    type CardProps,
+} from '../../../components/card-property-object/card-property-object';
 
 const card: CardProps = {
     title: 'Codux',
@@ -13,7 +16,7 @@ const card: CardProps = {
 };
 
 export default createBoard({
-    name: 'Card Destructuring - Spread operator',
-    Board: () => <Card {...card} />,
+    name: 'Card Property Object - Spread operator',
+    Board: () => <CardPropertyObject {...card} />,
     isSnippet: true,
 });

@@ -1,21 +1,22 @@
 import { createBoard } from '@wixc3/react-board';
 import { CardPropertyObject } from '../../../components/card-property-object/card-property-object';
+import { cards, newTitle } from '../../../constants/constants';
 
-const card = {
-    title: 'title',
-    date: 'date',
-    description: 'description',
-    extraDescription: 'extraDescription',
-};
+const { title, year } = cards[0];
+const card = cards[0];
+const titleByfunc = (newTitle: string) => newTitle;
+const handleClick: () => void = () => alert(newTitle);
 
 export default createBoard({
-    name: 'Card Property object - Board imported data',
+    name: 'Card Propery object - Imported data',
     Board: () => (
         <CardPropertyObject
-            title={card.title}
-            date={card.date}
+            title={titleByfunc(newTitle)}
+            year={year}
             description={card.description}
-            extraDescription={card.extraDescription}
+            date={card.date}
+            version={card.version}
+            onClick={handleClick}
         />
     ),
     isSnippet: true,

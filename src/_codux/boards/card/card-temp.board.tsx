@@ -1,19 +1,15 @@
 import { createBoard } from '@wixc3/react-board';
 import { Card, type CardProps } from '../../../components/card/card';
 
-const card: CardProps = {
-    title: 'title',
-    year: 2024,
-    description: 'Software',
-    date: new Date(),
-    version: 'beta',
-    onClick: () => null,
-};
-
-const { title, year, description, date, version, onClick } = card;
+const title = 'this is a title! {}';
+const year = 2024;
+const description = 'Software';
+const date = new Date(2021, 5, 16);
+const version = 'beta';
+const onClick = () => null;
 
 export default createBoard({
-    name: 'Card Destructuring - destructuring from obj',
+    name: 'Card Destructuring - in file const',
     Board: () => (
         <Card
             title={title}

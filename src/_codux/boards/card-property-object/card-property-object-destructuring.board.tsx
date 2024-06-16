@@ -1,5 +1,8 @@
 import { createBoard } from '@wixc3/react-board';
-import { Card, type CardProps } from '../../../components/card/card';
+import {
+    CardPropertyObject,
+    type CardProps,
+} from '../../../components/card-property-object/card-property-object';
 
 const card: CardProps = {
     title: 'title',
@@ -13,9 +16,9 @@ const card: CardProps = {
 const { title, year, description, date, version, onClick } = card;
 
 export default createBoard({
-    name: 'Card Destructuring - destructuring from obj',
+    name: 'Card Property Object - destructuring',
     Board: () => (
-        <Card
+        <CardPropertyObject
             title={title}
             year={year}
             description={description}
