@@ -12,7 +12,7 @@ const cardData = {
 };
 
 export default createBoard({
-    name: 'Card',
+    name: 'Card Destructuring - Board Spread operator',
     Board: () => <Card {...cardData} />,
     isSnippet: true,
 });

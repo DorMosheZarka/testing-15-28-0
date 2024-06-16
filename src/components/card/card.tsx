@@ -4,18 +4,20 @@ import styles from './card.module.scss';
 export interface CardProps {
     className?: string;
     title: string;
-    date: string;
+    year: number;
     description: string;
-    extraDescription: string;
+    date: Date;
+    version: 'alpha' | 'beta';
     onClick: () => void;
 }
 
 export const Card = ({
     className,
     title,
-    date,
+    year,
     description,
-    extraDescription,
+    version,
+    date,
     onClick,
 }: CardProps) => {
     return (
@@ -30,14 +32,16 @@ export const Card = ({
                     {title}
                 </a>
                 <div className="meta">
-                    <span className="date">{date}</span>
+                    <span className="date">{year}</span>
                 </div>
                 <div className="description">{description}</div>
             </div>
             <div className="extra content">
                 <a>
                     <i className="user icon"></i>
-                    {extraDescription}
+                    {date.toDateString()}
+                    {' - '}
+                    {version}
                 </a>
             </div>
         </div>

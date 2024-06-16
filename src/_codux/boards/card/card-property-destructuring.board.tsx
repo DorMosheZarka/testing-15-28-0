@@ -1,21 +1,27 @@
 import { createBoard } from '@wixc3/react-board';
-import { Card } from '../../../components/card/card';
+import { Card, type CardProps } from '../../../components/card/card';
 
-const card = {
+const card: CardProps = {
     title: 'title',
-    date: 'date',
-    description: 'description',
-    extraDescription: 'extraDescription',
+    year: 2024,
+    description: 'Software',
+    date: new Date(),
+    version: 'beta',
+    onClick: () => null,
 };
 
+const { title, year, description, date, version, onClick } = card;
+
 export default createBoard({
-    name: 'Card - Property Destructuring',
+    name: 'Card Destructuring - Board Property destructuring',
     Board: () => (
         <Card
-            title={card.title}
-            date={card.date}
-            description={card.description}
-            extraDescription={card.extraDescription}
+            title={title}
+            year={year}
+            description={description}
+            date={date}
+            version={version}
+            onClick={onClick}
         />
     ),
     isSnippet: true,

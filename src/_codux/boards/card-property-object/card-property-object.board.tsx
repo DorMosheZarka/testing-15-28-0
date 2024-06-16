@@ -9,7 +9,7 @@ const card = {
 };
 
 export default createBoard({
-    name: 'CardPropertyObject',
+    name: 'Card Property object - Board imported data',
     Board: () => (
         <CardPropertyObject
             title={card.title}

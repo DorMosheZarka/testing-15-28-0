@@ -1,21 +1,21 @@
 import { createBoard } from '@wixc3/react-board';
 import { Card } from '../../../components/card/card';
-import { cardData, newTitle } from '../../../constants/constants';
+import { cards, newTitle } from '../../../constants/constants';
 
-const { title, date, description, extraDescription } = cardData;
-
+const { title, year } = cards[0];
+const card = cards[0];
 const titleByfunc = (newTitle: string) => newTitle;
-
 const handleClick: () => void = () => alert(newTitle);
 
 export default createBoard({
-    name: 'Card - imported data',
+    name: 'Card Destructuring - Board Imported data',
     Board: () => (
         <Card
-            title={titleByfunc('title ')}
-            date={cardData.date}
-            description={cardData.description}
-            extraDescription={cardData.extraDescription}
+            title={titleByfunc(newTitle)}
+            year={year}
+            description={card.description}
+            date={card.date}
+            version="beta"
             onClick={handleClick}
         />
     ),
