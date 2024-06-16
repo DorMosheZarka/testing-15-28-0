@@ -2,6 +2,7 @@ import { createBoard } from '@wixc3/react-board';
 import { Card } from '../../../components/card/card';
 import { cards, newTitle } from '../../../constants/constants';
 
+
 const { title, year } = cards[0];
 const card = cards[0];
 const titleByfunc = (newTitle: string) => newTitle;

@@ -1,10 +1,13 @@
+import { Description } from '../data/description/description';
+
+
 export type Version = 'alpha' | 'beta';
 
 export interface Card {
     id: number;
     title: string;
     year: number;
-    description: string;
+    description: Description;
     version: Version;
     date: Date;
 }
@@ -14,7 +17,7 @@ export const cards: Card[] = [
         id: 1,
         title: 'Codux',
         year: 2024,
-        description: 'software',
+        description: new Description('Codux', 'Wix', 5),
         version: 'beta',
         date: new Date(),
     },

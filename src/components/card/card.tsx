@@ -1,11 +1,12 @@
 import classNames from 'classnames';
 import styles from './card.module.scss';
+import { Description } from '../../data/description/description';
 
 export interface CardProps {
     className?: string;
     title: string;
     year: number;
-    description: string;
+    description: Description;
     date: Date;
     version: 'alpha' | 'beta';
     onClick: () => void;
@@ -34,7 +35,7 @@ export const Card = ({
                 <div className="meta">
                     <span className="date">{year}</span>
                 </div>
-                <div className="description">{description}</div>
+                <div className="description">{description.getPerson()}</div>
             </div>
             <div className="extra content">
                 <a>
