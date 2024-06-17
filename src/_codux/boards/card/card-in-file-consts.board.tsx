@@ -12,7 +12,7 @@ const version = 'beta';
 const onClick = () => null;
 
 export default createBoard({
-    name: 'Card Destructuring - in file const',
+    name: 'Card Destructuring - in file consts',
     Board: () => (
         <Card
             title={title}
