@@ -1,6 +1,6 @@
 import { createBoard } from '@wixc3/react-board';
 import { CardPropertyObject } from '../../../components/card-property-object/card-property-object';
-import { Description } from '../../../data/description/description';
+import { Description } from '../../../classes/description';
 
 const companyDescription = new Description('Codux', 'Wix', 5);
 

@@ -3,7 +3,7 @@ import {
     CardPropertyObject,
     type CardProps,
 } from '../../../components/card-property-object/card-property-object';
-import { Description } from '../../../data/description/description';
+import { Description } from '../../../classes/description';
 
 const card: CardProps = {
     title: 'title',

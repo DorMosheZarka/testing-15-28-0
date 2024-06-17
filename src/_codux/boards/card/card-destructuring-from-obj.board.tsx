@@ -5,7 +5,7 @@ import { Description } from '../../../classes/description';
 const card: CardProps = {
     title: 'title',
     year: 2024,
-    description: new Description('Codux', 'Wix', 2024, new Description("Codux", "Wix", 2024)),
+    description: new Description('Codux', 'Wix', 2024),
     date: new Date(),
     version: 'beta',
     onClick: () => null,
