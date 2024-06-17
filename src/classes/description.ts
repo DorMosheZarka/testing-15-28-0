@@ -1,5 +1,3 @@
-import { SubDescription } from './sub-description';
-
 export class Description {
     name;
     companyName;
@@ -9,8 +7,8 @@ export class Description {
     constructor(
         name: string,
         companyName: string,
-        since?: number,
-        subDescription?: SubDescription,
+        since: number,
+        subDescription?: Description,
     ) {
         this.name = name;
         this.companyName = companyName;
