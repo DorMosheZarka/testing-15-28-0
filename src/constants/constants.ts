@@ -1,5 +1,4 @@
-import { Description } from '../data/description/description';
-
+import { Description } from '../classes/description';
 
 export type Version = 'alpha' | 'beta';
 

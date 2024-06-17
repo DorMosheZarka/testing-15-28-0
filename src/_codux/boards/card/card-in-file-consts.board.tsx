@@ -10,6 +10,8 @@ const description = companyDescription;
 const date = new Date(2021, 5, 16);
 const version = 'beta';
 const onClick = () => null;
+const imgUrl: string =
+    'https://wixplosives.github.io/codux-assets-storage/add-panel/image-placeholder.jpg';
 
 export default createBoard({
     name: 'Card Destructuring - in file consts',
@@ -21,6 +23,7 @@ export default createBoard({
             date={date}
             version={version}
             onClick={onClick}
+            imgUrl={imgUrl}
         />
     ),
     isSnippet: true,

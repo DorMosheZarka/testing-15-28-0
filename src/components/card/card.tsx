@@ -10,6 +10,7 @@ export interface CardProps {
     date: Date;
     version: 'alpha' | 'beta';
     onClick: () => void;
+    imgUrl: string;
 }
 
 export const Card = ({
@@ -20,11 +21,12 @@ export const Card = ({
     version,
     date,
     onClick,
+    imgUrl,
 }: CardProps) => {
     return (
         <div className="ui card">
             <img
-                src="https://wixplosives.github.io/codux-assets-storage/add-panel/image-placeholder.jpg"
+                src={imgUrl}
                 alt=""
             />
             <div className="content">

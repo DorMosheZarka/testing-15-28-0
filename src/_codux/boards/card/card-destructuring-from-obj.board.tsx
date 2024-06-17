@@ -9,9 +9,10 @@ const card: CardProps = {
     date: new Date(),
     version: 'beta',
     onClick: () => null,
+    imgUrl: 'https://wixplosives.github.io/codux-assets-storage/add-panel/image-placeholder.jpg',
 };
 
-const { title, year, description, date, version, onClick } = card;
+const { title, year, description, date, version, onClick, imgUrl } = card;
 
 export default createBoard({
     name: 'Card Destructuring - destructuring from obj',
@@ -23,6 +24,7 @@ export default createBoard({
             date={date}
             version={version}
             onClick={onClick}
+            imgUrl={imgUrl}
         />
     ),
     isSnippet: true,
