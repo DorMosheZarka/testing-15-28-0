@@ -1,0 +1,16 @@
+.root {
+  width: 100vw;
+  height: 100vh;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-origin: padding-box;
+  background-clip: border-box;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-attachment: scroll;
+  background-image: url(https://wixplosives.github.io/codux-assets-storage/add-panel/image-placeholder.jpg);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  opacity: 0.5;
+}
