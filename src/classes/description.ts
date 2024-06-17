@@ -1,10 +1,17 @@
+import { SubDescription } from './sub-description';
+
 export class Description {
     name;
     companyName;
     since;
     subDescription;
 
-    constructor(name: string, companyName: string, since?: number, subDescription?: Description) {
+    constructor(
+        name: string,
+        companyName: string,
+        since?: number,
+        subDescription?: SubDescription,
+    ) {
         this.name = name;
         this.companyName = companyName;
         this.since = since;
@@ -13,9 +20,5 @@ export class Description {
 
     getPerson() {
         return `${this.name} ${this.companyName} ${this.since}`;
-    }
-
-    getSubDescription() {
-        return this.subDescription;
     }
 }
