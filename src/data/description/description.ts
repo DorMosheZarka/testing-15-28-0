@@ -1,7 +1,7 @@
 export class Description {
     name: string;
     companyName: string;
-    since: number;
+    since?: number;
 
     constructor(name: string, companyName: string, since: number) {
         this.name = name;
