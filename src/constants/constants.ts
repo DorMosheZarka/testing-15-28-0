@@ -1,7 +1,8 @@
 import { Description } from '../classes/description';
+import { Node } from '../classes/node';
 
 export interface BinTree {
-    value: number;
+    value: Node;
     left?: BinTree;
     right?: BinTree;
 }
@@ -31,23 +32,23 @@ export const cards: Card[] = [
 export const newTitle = 'new title';
 
 export const binTreeData: BinTree = {
-    value: 1,
+    value: new Node([1]),
     left: {
-        value: 2,
+        value: new Node([2]),
         left: {
-            value: 4,
+            value: new Node([4]),
         },
         right: {
-            value: 5,
+            value: new Node([5]),
         },
     },
     right: {
-        value: 3,
+        value: new Node([3]),
         left: {
-            value: 6,
+            value: new Node([6]),
         },
         right: {
-            value: 7,
+            value: new Node([7]),
         },
     },
 };
