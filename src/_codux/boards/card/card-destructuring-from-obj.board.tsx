@@ -1,6 +1,7 @@
 import { createBoard } from '@wixc3/react-board';
 import { Card, type CardProps } from '../../../components/card/card';
 import { Description } from '../../../classes/description';
+import { SubDescription } from '../../../classes/sub-description';
 
 const card: CardProps = {
     title: 'title',

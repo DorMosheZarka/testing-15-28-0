@@ -1,6 +1,6 @@
 import classNames from 'classnames';
 import styles from '../card/card.module.scss';
-import { Description } from '../../data/description/description';
+import { Description } from '../../classes/description';
 
 type Version = 'alpha' | 'beta'
 
