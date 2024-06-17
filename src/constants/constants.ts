@@ -1,9 +1,9 @@
 import { Description } from '../classes/description';
 
-export interface Tree {
+export interface BinTree {
     value: number;
-    left?: Tree;
-    right?: Tree;
+    left?: BinTree;
+    right?: BinTree;
 }
 
 export interface Card {
@@ -30,7 +30,7 @@ export const cards: Card[] = [
 
 export const newTitle = 'new title';
 
-export const treeData: Tree = {
+export const binTreeData: BinTree = {
     value: 1,
     left: {
         value: 2,

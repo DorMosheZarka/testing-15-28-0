@@ -1,21 +1,21 @@
 import classNames from 'classnames';
-import styles from './tree-node.module.scss';
+import styles from './bin-tree-node.module.scss';
 
-export interface TreeNodeProps {
+export interface BinTreeNodeProps {
     className?: string;
     value: number;
-    left?: TreeNodeProps;
-    right?: TreeNodeProps;
+    left?: BinTreeNodeProps;
+    right?: BinTreeNodeProps;
 }
 
-export const TreeNode = ({ className, value, left, right }: TreeNodeProps) => {
+export const BinTreeNode = ({ className, value, left, right }: BinTreeNodeProps) => {
     return (
         <div className={classNames(styles.root, className)}>
             <div className={styles.node}>{value}</div>
             {(left || right) && (
                 <div className={styles.children}>
-                    {left && <TreeNode {...left} />}
-                    {right && <TreeNode {...right} />}
+                    {left && <BinTreeNode {...left} />}
+                    {right && <BinTreeNode {...right} />}
                 </div>
             )}
         </div>

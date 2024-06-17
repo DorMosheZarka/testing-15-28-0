@@ -1,9 +1,9 @@
 import { createBoard } from '@wixc3/react-board';
-import { TreeNode } from '../../../components/tree-node/tree-node';
-import { treeData } from '../../../constants/constants';
+import { BinTreeNode } from '../../../components/bin-tree-node/bin-tree-node';
+import { binTreeData } from '../../../constants/constants';
 
 export default createBoard({
-    name: 'TreeNode',
-    Board: () => <TreeNode {...treeData} />,
+    name: 'BinTreeNode',
+    Board: () => <BinTreeNode {...binTreeData} />,
     isSnippet: true,
 });
