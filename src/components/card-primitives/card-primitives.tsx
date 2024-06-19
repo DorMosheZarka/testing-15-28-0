@@ -1,52 +1,47 @@
 import classNames from 'classnames';
-import styles from './card.module.scss';
-import { Description } from '../../classes/description';
+import styles from './card-primitives.module.scss.module.scss';
 
-export interface CardProps {
+export interface CardPrimitivesProps {
     className?: string;
-    title: string;
-    year: number;
-    description: Description;
-    date: Date;
-    version: 'alpha' | 'beta';
-    onClick: () => void;
-    imgUrl?: string;
+    title?: string;
+    year?: number;
+    description?: string;
+    available?: boolean;
+    date?: string;
+    version?: bigint;
 }
 
-export const Card = ({
+export const CardPrimitives = ({
     className,
     title,
     year,
     description,
-    version,
+    available,
     date,
-    onClick,
-    imgUrl,
-}: CardProps) => {
+}: CardPrimitivesProps) => {
     return (
         <div className="ui card">
             <img
                 src={
-                    imgUrl ||
                     'https://wixplosives.github.io/codux-assets-storage/add-panel/image-placeholder.jpg'
                 }
                 alt=""
             />
-            <div className="content" about={imgUrl}>
-                <a className="header" onClick={onClick}>
-                    {title}
-                </a>
+            <div className="content">
+                <a className="header">{title}</a>
                 <div className="meta">
                     <span className="date">{year}</span>
                 </div>
-                <div className="description">{description.getPerson()}</div>
+                <div className="description">
+                    {description}
+                    {available}
+                </div>
             </div>
             <div className="extra content">
                 <a>
                     <i className="user icon"></i>
-                    {date.toDateString()}
                     {' - '}
-                    {version}
+                    {date}
                 </a>
             </div>
         </div>
