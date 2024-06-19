@@ -1,5 +1,5 @@
 import { createBoard } from '@wixc3/react-board';
-import { CardPrimitives } from '../../../components/card-primitives/card-primitives';
+import { CardPrimitivesDestructuring } from '../../../components/card-primitives/card-primitives';
 
 interface MockData {
     text: string;
@@ -26,7 +26,7 @@ const veryBigNumber = 20000000000n;
 export default createBoard({
     name: 'CardPrimitives - Destructuring and Refrenced',
     Board: () => (
-        <CardPrimitives
+        <CardPrimitivesDestructuring
             title={text}
             year={mockData.integer}
             description={undefined}

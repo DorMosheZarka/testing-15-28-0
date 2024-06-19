@@ -23,14 +23,16 @@ export const CardPrimitivesPropertyObj = (props: CardPrimitivesPropertyObjProps)
             <div className="content">
                 <a className="header">{props.title}</a>
                 <div className="meta">
-                    <span className="date"></span>
+                    <span className="date">{props.year}</span>
                 </div>
-                <div className="description"></div>
+                <div className="description">{props.description}</div>
             </div>
             <div className="extra content">
                 <a>
                     <i className="user icon"></i>
+                    {props.date}
                     {' - '}
+                    {props.version}
                 </a>
             </div>
         </div>

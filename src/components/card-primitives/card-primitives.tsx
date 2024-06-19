@@ -1,7 +1,7 @@
 import classNames from 'classnames';
 import styles from './card-primitives.module.scss.module.scss';
 
-export interface CardPrimitivesProps {
+export interface CardPrimitivesDestructuringProps {
     className?: string;
     title?: string;
     year?: number;
@@ -11,7 +11,7 @@ export interface CardPrimitivesProps {
     version?: bigint;
 }
 
-export const CardPrimitives = ({
+export const CardPrimitivesDestructuring = ({
     className,
     title,
     year,
@@ -19,7 +19,7 @@ export const CardPrimitives = ({
     available,
     date,
     version,
-}: CardPrimitivesProps) => {
+}: CardPrimitivesDestructuringProps) => {
     return (
         <div className="ui card">
             <img
