@@ -2,7 +2,6 @@ import { createBoard } from '@wixc3/react-board';
 import { Card, type CardProps } from '../../../components/card/card';
 import { Description } from '../../../classes/description';
 
-
 const card: CardProps = {
     title: 'Codux',
     year: 2024,

@@ -9,7 +9,7 @@ export interface CardProps {
     description: Description;
     date: Date;
     version: 'alpha' | 'beta';
-    onClick: () => void;
+    onClick: (arg0: number) => void;
     imgUrl?: string;
 }
 
@@ -32,7 +32,7 @@ export const Card = ({
                 }
                 alt=""
             />
-            <div className="content">
+            <div className="content" about={imgUrl}>
                 <div className="image"></div>
                 <a className="header" onClick={onClick}>
                     {title}

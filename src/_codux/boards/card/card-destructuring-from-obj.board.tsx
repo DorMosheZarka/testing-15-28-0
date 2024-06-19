@@ -18,11 +18,11 @@ export default createBoard({
     name: 'Card Destructuring - destructuring from obj',
     Board: () => (
         <Card
-            title={title}
+            title={version}
             year={year}
             description={description}
             date={date}
-            version={version}
+            version={card.version}
             onClick={onClick}
             imgUrl={imgUrl}
         />
