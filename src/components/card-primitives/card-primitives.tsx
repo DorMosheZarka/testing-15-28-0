@@ -18,6 +18,7 @@ export const CardPrimitives = ({
     description,
     available,
     date,
+    version,
 }: CardPrimitivesProps) => {
     return (
         <div className="ui card">
@@ -42,6 +43,7 @@ export const CardPrimitives = ({
                     <i className="user icon"></i>
                     {' - '}
                     {date}
+                    {version}
                 </a>
             </div>
         </div>
