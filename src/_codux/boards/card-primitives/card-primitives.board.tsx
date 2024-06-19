@@ -17,14 +17,14 @@ const mockData = {
     veryBigNumber: 10000000000n,
 };
 
-const text = 'const Title';
+const text = 'Const Title';
 const integer = 2026;
 const trueOrFalse = false;
 const currentDate = null;
 const veryBigNumber = 20000000000n;
 
 export default createBoard({
-    name: 'CardPrimitives - Destructuring and Refrenced',
+    name: 'CardPrimitivesDestructuring - Refrenced',
     Board: () => (
         <CardPrimitivesDestructuring
             title={text}
