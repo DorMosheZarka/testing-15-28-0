@@ -5,9 +5,9 @@ export interface CardPrimitivesProps {
     className?: string;
     title?: string;
     year?: number;
-    description?: string;
+    description?: undefined;
     available?: boolean;
-    date?: string;
+    date?: null;
     version?: bigint;
 }
 

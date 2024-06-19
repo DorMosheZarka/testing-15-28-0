@@ -13,11 +13,6 @@ export interface CardPrimitivesSetValuesProps {
 
 export const CardPrimitivesSetValues = ({
     className,
-    title,
-    year,
-    description,
-    available,
-    date,
 }: CardPrimitivesSetValuesProps) => {
     return (
         <div className="ui card">
