@@ -7,7 +7,7 @@ export interface CardPrimitivesDestructuringComplexProps {
     year?: number;
     description?: string;
     available?: boolean;
-    date?: string | null;
+    date?: null;
     version?: bigint;
     author?: string;
     tags?: string[];
@@ -24,15 +24,18 @@ export const CardPrimitivesDestructuringComplex = ({
     author,
     tags,
 }: CardPrimitivesDestructuringComplexProps) => {
-    const getMetaDate = (year: number | undefined, available: boolean | undefined): JSX.Element => {
-        if (year) return <span />;
-        return available ? <span>2025</span> : <span>{2025}</span>;
+    const getMetaDate = (
+        year: number | undefined,
+        available: boolean | undefined,
+    ): React.ReactElement => {
+        if (year) return <span>{year}</span>;
+        return available ? <span>2025</span> : <span>2026</span>;
     };
 
     const renderDescription = (
         description: string | undefined,
         available: boolean | undefined,
-    ): JSX.Element => {
+    ): React.ReactElement => {
         if (!description) return <span>No description provided.</span>;
         return (
             <div style={{ fontWeight: available ? 'bold' : 'normal' }}>
@@ -42,15 +45,15 @@ export const CardPrimitivesDestructuringComplex = ({
         );
     };
 
-    const getVersionText = (version: bigint | undefined): string => {
+    const getVersionText = (version: bigint | undefined): React.ReactNode => {
         if (version) return version.toString();
         return 'alpha';
     };
 
-    const renderTags = (tags: string[] | undefined): JSX.Element | null => {
+    const renderTags = (tags: string[] | undefined): React.ReactElement | null => {
         if (!tags || tags.length === 0) return null;
         return (
-            <div className={styles.tags}>
+            <div>
                 {tags.map((tag, index) => (
                     <span key={index} className={styles.tag}>
                         {tag}
@@ -60,13 +63,17 @@ export const CardPrimitivesDestructuringComplex = ({
         );
     };
 
+    const getDateText = (date: null | undefined): string => {
+        return date || new Date().toDateString();
+    };
+
     return (
         <div className={classNames('ui card', className)}>
             <img
                 src={
                     'https://wixplosives.github.io/codux-assets-storage/add-panel/image-placeholder.jpg'
                 }
-                alt=""
+                alt={title}
             />
             <div className="content">
                 <a className="header">
@@ -82,8 +89,8 @@ export const CardPrimitivesDestructuringComplex = ({
             <div className="extra content">
                 <a>
                     <i className="user icon"></i>
+                    {(getDateText(date))}
                     {' - '}
-                    {date}
                     {getVersionText(version)}
                 </a>
                 <div className="author">{author && <span>Author: {author}</span>}</div>
