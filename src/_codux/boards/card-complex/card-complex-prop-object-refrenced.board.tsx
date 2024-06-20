@@ -1,5 +1,5 @@
 import { createBoard } from '@wixc3/react-board';
-import { CardPrimitivesPropertyObj } from '../../../components/card-complex/card-complex';
+import { CardPrimitivesPropertyObjSimple } from '../../../components/card-complex/card-complex';
 
 interface MockData {
     text: string;
@@ -24,9 +24,9 @@ const currentDate = null;
 const veryBigNumber = 20000000000n;
 
 export default createBoard({
-    name: 'CardPrimitivesPropertyObj - Refrenced',
+    name: 'CardPrimitivesPropertyObjSimple - Refrenced',
     Board: () => (
-        <CardPrimitivesPropertyObj
+        <CardPrimitivesPropertyObjSimple
             available={trueOrFalse}
             date={mockData.currentDate}
             title={text}

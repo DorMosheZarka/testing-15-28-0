@@ -1,7 +1,7 @@
 import classNames from 'classnames';
 import styles from './card-primitives.module.scss.module.scss';
 
-export interface CardPrimitivesPropertyObjProps {
+export interface CardPrimitivesPropertyObjSimpleProps {
     className?: string;
     title?: string;
     year?: number;
@@ -11,7 +11,7 @@ export interface CardPrimitivesPropertyObjProps {
     version?: bigint;
 }
 
-export const CardPrimitivesPropertyObj = (props: CardPrimitivesPropertyObjProps) => {
+export const CardPrimitivesPropertyObjSimple = (props: CardPrimitivesPropertyObjSimpleProps) => {
     return (
         <div className="ui card">
             <img
