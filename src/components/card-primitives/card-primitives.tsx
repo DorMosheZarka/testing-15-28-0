@@ -1,17 +1,17 @@
 import classNames from 'classnames';
-import styles from './card-primitives.module.scss.module.scss';
+import styles from './card-primitives.module.scss';
 
-export interface CardPrimitivesDestructuringProps {
+export interface CardPrimitivesDestructuringSimpleProps {
     className?: string;
     title?: string;
     year?: number;
-    description?: undefined;
+    description?: string;
     available?: boolean;
-    date?: null;
+    date?: string | null;
     version?: bigint;
 }
 
-export const CardPrimitivesDestructuring = ({
+export const CardPrimitivesDestructuringSimple = ({
     className,
     title,
     year,
@@ -19,7 +19,7 @@ export const CardPrimitivesDestructuring = ({
     available,
     date,
     version,
-}: CardPrimitivesDestructuringProps) => {
+}: CardPrimitivesDestructuringSimpleProps) => {
     return (
         <div className="ui card">
             <img

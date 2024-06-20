@@ -3,17 +3,9 @@ import styles from './card-primitives.module.scss.module.scss';
 
 export interface CardPrimitivesSetValuesProps {
     className?: string;
-    title?: string;
-    year?: number;
-    description?: string;
-    available?: boolean;
-    date?: string;
-    version?: bigint;
 }
 
-export const CardPrimitivesSetValues = ({
-    className,
-}: CardPrimitivesSetValuesProps) => {
+export const CardPrimitivesSetValues = ({ className }: CardPrimitivesSetValuesProps) => {
     return (
         <div className="ui card">
             <img
