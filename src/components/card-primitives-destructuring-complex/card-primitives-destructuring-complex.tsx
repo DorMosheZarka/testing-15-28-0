@@ -89,11 +89,11 @@ export const CardPrimitivesDestructuringComplex = ({
             <div className="extra content">
                 <a>
                     <i className="user icon"></i>
-                    {(getDateText(date))}
+                    {getDateText(date)}
                     {' - '}
                     {getVersionText(version)}
                 </a>
-                <div className="author">{author && <span>Author: {author}</span>}</div>
+                <div className="author">{!author && <span>Author: {author}</span>}</div>
                 {renderTags(tags)}
             </div>
         </div>
