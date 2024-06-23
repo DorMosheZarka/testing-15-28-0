@@ -32,10 +32,11 @@
   gap: 0.5em;
 }
 .cancelButton {
-  border: #c52a2a;
+  color: white;
+  border: 1px solid #c52a2a;
   background-color: #c52a2a;
   &:hover {
     color: #c52a2a;
-    background-color: #ffffff;
+    background-color: white;
   }
 }
