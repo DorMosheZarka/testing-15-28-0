@@ -1,6 +1,8 @@
 import classNames from 'classnames';
 import styles from './card-primitives.module.scss';
 
+const temp = 'Mock Title';
+
 export interface CardPrimitivesDestructuringSimpleProps {
     className?: string;
     title?: string;
@@ -29,7 +31,7 @@ export const CardPrimitivesDestructuringSimple = ({
                 alt=""
             />
             <div className="content">
-                <a className="header">{title}</a>
+                <a className="header">{temp}</a>
                 <div className="meta">
                     <span className="date">{year}</span>
                 </div>
@@ -41,8 +43,8 @@ export const CardPrimitivesDestructuringSimple = ({
             <div className="extra content">
                 <a>
                     <i className="user icon"></i>
-                    {' - '}
                     {date}
+                    {' - '}
                     {version}
                 </a>
             </div>

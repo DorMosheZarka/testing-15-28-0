@@ -3,6 +3,6 @@ import { CardPrimitivesDestructuringComplex } from '../../../components/card-pri
 
 export default createBoard({
     name: 'CardPrimitivesDestructuringComplex - All',
-    Board: () => <CardPrimitivesDestructuringComplex />,
+    Board: () => <CardPrimitivesDestructuringComplex slids="tttttt" />,
     isSnippet: true,
 });

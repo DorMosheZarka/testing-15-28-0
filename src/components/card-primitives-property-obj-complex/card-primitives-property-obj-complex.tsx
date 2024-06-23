@@ -19,7 +19,7 @@ export const CardPrimitivesPropertyObjComplex = (props: CardPrimitivesPropertyOb
         available: boolean | undefined,
     ): React.ReactElement => {
         if (year) return <span>{year}</span>;
-        return available ? <span>2025</span> : <span>2026</span>;
+        return available ? <span>2020</span> : <span>2026</span>;
     };
 
     const renderDescription = (
@@ -36,7 +36,7 @@ export const CardPrimitivesPropertyObjComplex = (props: CardPrimitivesPropertyOb
     };
 
     const getVersionText = (version: bigint | undefined): string => {
-        if (version) return version.toString();
+        if (version) return version.toString() + '.0.0';
         return 'alpha';
     };
 
@@ -81,7 +81,6 @@ export const CardPrimitivesPropertyObjComplex = (props: CardPrimitivesPropertyOb
             <div className="extra content">
                 <a>
                     <i className="user icon"></i>
-                    {' - '}
                     {getDateText(props.date)}
                     {' - '}
                     {getVersionText(props.version)}

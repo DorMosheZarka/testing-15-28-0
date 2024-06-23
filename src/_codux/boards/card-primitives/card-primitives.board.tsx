@@ -27,7 +27,7 @@ export default createBoard({
     name: 'CardPrimitivesDestructuringSimple - Refrenced',
     Board: () => (
         <CardPrimitivesDestructuringSimple
-            title={text}
+            title={mockData.text}
             year={mockData.integer}
             description={undefined}
             available={mockData.trueOrFalse}
