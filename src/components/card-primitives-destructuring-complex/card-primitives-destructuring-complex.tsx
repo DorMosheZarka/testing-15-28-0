@@ -40,7 +40,7 @@ export const CardPrimitivesDestructuringComplex = ({
         return (
             <div style={{ fontWeight: available ? 'bold' : 'normal' }}>
                 {description}
-                {available && ((s: string) => available.toString().toUpperCase() + s)('Hey')}
+                {available && ((s: string) => available.toString().toUpperCase() + s)('Hey') && null}
             </div>
         );
     };

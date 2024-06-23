@@ -6,14 +6,14 @@ export default createBoard({
     Board: () => (
         <CardPrimitivesPropertyObjComplex
             className="custom-class"
-            title="Card Title"
+            title="Innovative Solutions"
             year={2023}
-            description="This is a detailed description of the card."
+            description="Revolutionizing the tech industry with cutting-edge developments."
             available={false}
             date="2023-04-01"
             version={BigInt(1)}
-            author="Author Name"
-            tags={['tag1', 'tag2', 'tag3']}
+            author="Jane Doe"
+            tags={['Innovation', 'Technology', 'Future']}
         />
     ),
     isSnippet: true,

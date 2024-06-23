@@ -6,14 +6,14 @@ export default createBoard({
     Board: () => (
         <CardPrimitivesPropertyObjComplex
             className="custom-class"
-            title="Card Title"
-            year={2023}
-            description="This is a detailed description of the card."
+            title="The Great Gatsby"
+            year={1925}
+            description="A novel written by American author F. Scott Fitzgerald."
             available={false}
-            date="2023-04-01"
+            date="1925-04-10"
             version={BigInt(1)}
-            author="Author Name"
-            tags={['tag1', 'tag2', 'tag3']}
+            author="F. Scott Fitzgerald"
+            tags={['classic', 'literature']}
         />
     ),
     isSnippet: true,
