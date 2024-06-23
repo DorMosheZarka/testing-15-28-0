@@ -3,6 +3,6 @@ import { CardPrimitivesSetValues } from '../../../components/card-primitives-set
 
 export default createBoard({
     name: 'CardPrimitivesSetValues',
-    Board: () => <CardPrimitivesSetValues />,
+    Board: () => <CardPrimitivesSetValues className="custom-class-name" />,
     isSnippet: true,
 });

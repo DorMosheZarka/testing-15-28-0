@@ -5,18 +5,21 @@ import { Button, Icon } from 'semantic-ui-react';
 
 export interface HeaderProps {
     className?: string;
+    link1: string;
+    link2: string;
+    link3: string
 }
 
-export const Header = ({ className }: HeaderProps) => {
+export const Header = ({ className, link1, link2, link3 }: HeaderProps) => {
     return (
         <div className={classNames(styles.root, className)}>
             <div className={styles.navBar}>
                 <CoduxSvg className={styles.logo} />
                 <ul className={styles.navLinks}>
-                    <li className={styles.link}>Home</li>
-                    <li className={styles.link}>About</li>
+                    <li className={styles.link}>{link1}</li>
+                    <li className={styles.link}>{link2}</li>
                     <Button animated>
-                        <Button.Content visible>Log In</Button.Content>
+                        <Button.Content visible>{link3}</Button.Content>
                         <Button.Content hidden>
                             <Icon name="arrow right" />
                         </Button.Content>

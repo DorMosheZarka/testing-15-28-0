@@ -5,10 +5,10 @@ export default createBoard({
     name: 'Dialog',
     Board: () => (
         <Dialog
-            title="Dialog Title"
-            text="This is the content of the dialog."
-            buttonAcceptText="Accept"
-            buttonCancelText="Cancel"
+            title="Confirmation"
+            text="Are you sure you want to proceed with this action?"
+            buttonAcceptText="Yes"
+            buttonCancelText="No"
         />
     ),
     isSnippet: true,

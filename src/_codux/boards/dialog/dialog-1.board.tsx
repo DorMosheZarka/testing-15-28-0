@@ -6,7 +6,7 @@ export default createBoard({
     Board: () => (
         <Dialog
             title="Dialog Title"
-            text="This is the content of the dialog."
+            text="This is the content of the dialog. It provides information to the user and requires action."
             buttonAcceptText="Accept"
             buttonCancelText="Cancel"
         />

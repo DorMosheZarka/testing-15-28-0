@@ -3,12 +3,6 @@ import { Header } from '../../../components/header/header';
 
 export default createBoard({
     name: 'Header',
-    Board: () => (
-        <Header
-            link1="Home"
-            link2="About"
-            link3="Contact"
-        />
-    ),
+    Board: () => <Header link1="Home" link2="About" link3="Contact" />,
     isSnippet: true,
 });
