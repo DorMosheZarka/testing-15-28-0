@@ -1,4 +1,26 @@
 .root {
   width: 25em;
-  height: 25em;
+  border-radius: 10px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  gap: 1em;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.title {
+}
+.exit {
+  cursor: pointer;
+}
+.main {
+}
+.footer {
+  display: flex;
+  justify-content: end;
+  gap: 0.5em;
 }
