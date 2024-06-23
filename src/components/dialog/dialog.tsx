@@ -6,9 +6,17 @@ export interface DialogProps {
     className?: string;
     title: string;
     text: string;
+    buttonAcceptText?: string;
+    buttonCancelText?: string;
 }
 
-export const Dialog = ({ className, title, text }: DialogProps) => {
+export const Dialog = ({
+    className,
+    title,
+    text,
+    buttonAcceptText,
+    buttonCancelText,
+}: DialogProps) => {
     return (
         <div className={classNames(styles.root, className)}>
             <header className={styles.header}>
@@ -17,8 +25,8 @@ export const Dialog = ({ className, title, text }: DialogProps) => {
             </header>
             <main className={styles.main}>{text}</main>
             <footer className={styles.footer}>
-                <Button text="button" />
-                <Button text="button" />
+                <Button text={buttonAcceptText || 'accept'} />
+                <Button text={buttonCancelText || 'cancel'} className={styles.cancelButton} />
             </footer>
         </div>
     );

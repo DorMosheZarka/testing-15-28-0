@@ -13,14 +13,29 @@
   width: 100%;
 }
 .title {
+  font-size: 1.2rem;
+  font-family: roboto;
 }
 .exit {
   cursor: pointer;
+  &:hover {
+    color: #c52a2a;
+    transition: color 0.1s ease-in-out;
+  }
 }
 .main {
+  font-family: roboto;
 }
 .footer {
   display: flex;
   justify-content: end;
   gap: 0.5em;
+}
+.cancelButton {
+  border: #c52a2a;
+  background-color: #c52a2a;
+  &:hover {
+    color: #c52a2a;
+    background-color: #ffffff;
+  }
 }
