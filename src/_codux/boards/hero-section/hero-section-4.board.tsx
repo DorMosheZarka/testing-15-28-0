@@ -3,6 +3,8 @@ import { HeroSection } from '../../../components/hero-section/hero-section';
 
 export default createBoard({
     name: 'HeroSection',
-    Board: () => <HeroSection className="custom-hero-section" imgUrl="https://example.com/hero.jpg" />,
+    Board: () => (
+        <HeroSection className="custom-hero-section" imgUrl="https://example.com/image.jpg" />
+    ),
     isSnippet: true,
 });

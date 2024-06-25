@@ -3,6 +3,6 @@ import { TreeNode } from '../../../components/tree-node/tree-node';
 
 export default createBoard({
     name: 'TreeNode',
-    Board: () => <TreeNode />,
+    Board: () => <TreeNode value={[1, 2, 3]} />,
     isSnippet: true,
 });

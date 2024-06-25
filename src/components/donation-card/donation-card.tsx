@@ -23,7 +23,7 @@ const getButtonClassNames = (progress: number) =>
 const getDonationCardProgressClassNames = (progress: number) =>
     `${styles.progress} ${getProgressClassNameByProgress(progress)}`;
 
-export function DonationCard({
+export default function DonationCard({
     title,
     description,
     donationTarget,
