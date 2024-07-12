@@ -2,6 +2,7 @@ import { createBoard } from '@wixc3/react-board';
 import { Suggest } from '../../../components/suggest/suggest';
 import { importedS, importedN, importedB } from '../constants';
 
+// prims
 const moduleScopeObject = { s: 'string', n: 0, b: false, nil: null, u: undefined, bi: 10n };
 const modeScopeStringOrNumber: string | number = 0;
 const moduleScopeObjectFromFunctionCall = (() => ({
@@ -49,7 +50,13 @@ export default createBoard({
                 u: moduleScopeObject.u,
                 bi: moduleScopeObjectWithExpression.bi,
             }}
-            s={importedS}
+            primS=""
+            primN={0}
+            primB={importedB}
+            primNil={null}
+            primU={undefined}
+            primBi={0n}
+            primOmni="Default text"
         />
     ),
     isSnippet: true,

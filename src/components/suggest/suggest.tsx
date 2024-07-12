@@ -1,10 +1,18 @@
 import classNames from 'classnames';
 import styles from './suggest.module.scss';
 
+type Prim = string | number | boolean | null | undefined | bigint;
+
 export interface SuggestProps {
     className?: string;
     primObject: { s: string; n: number; b: boolean; nil: null; u: undefined; bi: bigint };
-    s: string;
+    primS: string;
+    primN: number;
+    primB: boolean;
+    primNil: null;
+    primU: undefined;
+    primBi: bigint;
+    primOmni: Prim;
 }
 
 const s = 'module scope string';

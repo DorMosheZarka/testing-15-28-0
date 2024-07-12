@@ -30,4 +30,7 @@ export default createBoard({
         />
     ),
     isSnippet: true,
+    environmentProps: {
+        canvasHeight: 756,
+    },
 });

@@ -25,7 +25,7 @@ export const AllReactNodesList = ({
 }: AllReactNodesListProps) => {
     return (
         <div className={classNames(styles.root, className)}>
-            <h3>This is a list of all matching ReactNode types</h3>
+            <h3>{stringInstance}</h3>
             <ul>
                 <li>{stringInstance}</li>
                 <li>{numberInstance}</li>
