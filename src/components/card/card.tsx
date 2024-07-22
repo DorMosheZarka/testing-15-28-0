@@ -1,7 +1,6 @@
 import classNames from 'classnames';
 import styles from './card.module.scss';
 import { Description } from '../../classes/description';
-import D0115F47B570410F8E23C9443B47Dc2EWebp from '../../assets/d0115f47-b570-410f-8e23-c9443b47dc2e.webp';
 
 export interface CardProps {
     className?: string;
@@ -26,7 +25,7 @@ export const Card = ({
 }: CardProps) => {
     return (
         <div className="ui card">
-            <img src={D0115F47B570410F8E23C9443B47Dc2EWebp} alt="" />
+            <img src={imgUrl} alt="" />
             <div className="content" about={imgUrl}>
                 <a className="header" onClick={onClick}>
                     {title}

@@ -1,5 +1,9 @@
 import { createBoard } from '@wixc3/react-board';
-import { AllReactNodesList } from '../../../components/all-react-nodes-list/all-react-nodes-list';
+import {
+    AllReactNodesList,
+    Name,
+} from '../../../components/all-react-nodes-list/all-react-nodes-list';
+import { o } from './const';
 
 const stringInstance: string = 'stringInstance';
 const numberInstance: number = 0;
@@ -16,6 +20,9 @@ const reactElementArrayInstance: React.ReactElement[] = [
     <li key="6">{reactElementInstance}</li>,
 ];
 
+console.log(o);
+const blue = 'blue';
+
 export default createBoard({
     name: 'AllReactNodesList',
     Board: () => (
@@ -27,6 +34,8 @@ export default createBoard({
             nullInstance={nullInstance}
             reactElementInstance={reactElementInstance}
             reactElementArrayInstance={reactElementArrayInstance}
+            name={Name.Alisa}
+            color={blue}
         />
     ),
     isSnippet: true,

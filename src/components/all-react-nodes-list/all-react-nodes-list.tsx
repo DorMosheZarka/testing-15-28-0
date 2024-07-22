@@ -2,6 +2,15 @@ import classNames from 'classnames';
 import styles from './all-react-nodes-list.module.scss';
 import React from 'react';
 
+export enum Name {
+    Alisa,
+    Dor,
+}
+
+export type Color = 'blue' | 'red';
+
+const s = 'string';
+
 export interface AllReactNodesListProps {
     className?: string;
     stringInstance: string; // should default to "Default Text" ✔️
@@ -11,6 +20,7 @@ export interface AllReactNodesListProps {
     nullInstance: null; // should default to undefined ✔️
     reactElementInstance: React.ReactElement; // should default to undefined ✔️
     reactElementArrayInstance: React.ReactElement[]; // should default to undefined ✔️
+    color: Color;
 }
 
 export const AllReactNodesList = ({
@@ -22,14 +32,17 @@ export const AllReactNodesList = ({
     nullInstance,
     reactElementInstance,
     reactElementArrayInstance,
+    color,
 }: AllReactNodesListProps) => {
     return (
-        <div className={classNames(styles.root, className)}>
-            <h3>{stringInstance}</h3>
+        <div className={classNames(styles.root)} aria-atomic={booleanInstance}>
+            <h3>{temp}</h3>
             <ul>
-                <li>{stringInstance}</li>
+                <li>{color}</li>
                 <li>{numberInstance}</li>
-                <li>{booleanInstance} (not `Error` = works)</li>
+                <li>
+                    {booleanInstance} {color}
+                </li>
                 <li>{undefinedInstance} (not `Error` = works)</li>
                 <li>{nullInstance} (not `Error` = works)</li>
                 <li>{reactElementInstance}</li>

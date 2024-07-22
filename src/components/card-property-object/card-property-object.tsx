@@ -1,7 +1,6 @@
 import classNames from 'classnames';
 import styles from '../card/card.module.scss';
 import { Description } from '../../classes/description';
-import D0115F47B570410F8E23C9443B47Dc2EWebp from '../../assets/d0115f47-b570-410f-8e23-c9443b47dc2e.webp';
 
 type Version = 'alpha' | 'beta';
 
@@ -18,7 +17,10 @@ export interface CardProps {
 export const CardPropertyObject = (props: CardProps) => {
     return (
         <div className="ui card">
-            <img src={D0115F47B570410F8E23C9443B47Dc2EWebp} alt="" />
+            <img
+                alt=""
+                src="https://wixplosives.github.io/codux-assets-storage/add-panel/image-placeholder.jpg"
+            />
             <div className="content">
                 <div className="image"></div>
                 <a className="header" onClick={props.onClick}>

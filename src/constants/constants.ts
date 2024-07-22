@@ -52,3 +52,5 @@ export const binTreeData: BinTree = {
         },
     },
 };
+
+export const importedString = 'cancel';
